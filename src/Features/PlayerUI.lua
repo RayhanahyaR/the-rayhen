@@ -13,7 +13,7 @@ local PlayerUI = { context = "client" }
 PlayerUI.__index = PlayerUI
 
 --- @class PlayerUI
---- testing aaaaaaaaaaaaaaaaaa
+--- UIs are decals/images that appear on a player's screen. There are varying uses for UI in TRIA, such as displaying text, acting as a clickable button, making transitions, and further.
 --- @client
 
 --- @prop cleanup {ScreenGUI}
@@ -37,7 +37,7 @@ function PlayerUI.new()
 	return self
 end
 
---- Description
+--- Loads a UI into the map.
 function PlayerUI:LoadUI(gui: ScreenGui): ScreenGui
 	assert(gui:IsA("ScreenGui"), "':LoadUI' must be passed a 'ScreenGUI'")
 
