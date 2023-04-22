@@ -6,7 +6,6 @@
 local Skills = {}
 
 --- @class Skills
---- test hi hello hey hi im rayhan hi
 --- Description goes here
 function Skills.new(MapLib)
 	local self = setmetatable({}, Skills)
